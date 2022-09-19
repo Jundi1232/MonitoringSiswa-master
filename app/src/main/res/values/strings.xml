@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MonitoringSiswa</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_guru_main">GuruMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_guru">Tambah Guru</string>
+    <string name="add_mapel">Tambah Mata Pelajaran</string>
+    <string name="add_walmur">Tambah WaliMurid</string>
+
+    <string-array name="absen_array">
+        <item>Hadir</item>
+        <item>Alfa</item>
+        <item>Sakit</item>
+    </string-array>
+    <string-array name="kelas_array">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+    </string-array>
+</resources>

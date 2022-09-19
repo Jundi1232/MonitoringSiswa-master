@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903604716053",
+    "project_id": "monitoring-siswa-bd104",
+    "storage_bucket": "monitoring-siswa-bd104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903604716053:android:dfd9000203dcfaa3d2841c",
+        "android_client_info": {
+          "package_name": "com.example.monitoringsiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903604716053-9t73ter8s1ue592ostoveq74kau6chba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.monitoringsiswa",
+            "certificate_hash": "62c4b3c1b9606d29d9ed4aac79d40f783a370eaf"
+          }
+        },
+        {
+          "client_id": "903604716053-gbl3b2ve1ov504amkpq5bgeu0chg20d8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.monitoringsiswa",
+            "certificate_hash": "48d6ee68a6dceec7908ca366884b3193e4035d7d"
+          }
+        },
+        {
+          "client_id": "903604716053-0vsj2o3fh4oo4n70v5f8t952i7eotrdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNS8h4ooFI_TaP8qa-wL6yITsWUN2adeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903604716053-0vsj2o3fh4oo4n70v5f8t952i7eotrdh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

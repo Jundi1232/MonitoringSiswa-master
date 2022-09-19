@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/drawable/bg_cardname.xml" value="0.2305" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/drawable/ic_date.xml" value="0.1" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/drawable/ic_done.xml" value="0.15" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_absen_main.xml" value="0.264" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_add_absen.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_add_guru.xml" value="0.2" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_add_mapel.xml" value="0.16182432432432434" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_add_siswa.xml" value="0.176" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_add_wal_mur.xml" value="0.264" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_admin.xml" value="0.136" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_guru_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_guru_main2.xml" value="0.1" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_list_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_list_siswactivity.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_list_walmur.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_login.xml" value="0.18128654970760233" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_mapel_main.xml" value="0.16020066889632106" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_walas_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/activity_walmur_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/content_guru_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/item_absen.xml" value="0.264" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/item_guru.xml" value="0.14790575916230367" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/layout/item_mapel.xml" value="0.536" />
+        <entry key="..\:/jundi/Android/MonitoringSiswa-master/app/src/main/res/menu/menu_add.xml" value="0.1" />
+        <entry key="..\:/punya siapa bae/dafa temen bunga/app/src/main/res/drawable/background_profile.xml" value="0.20520833333333333" />
+        <entry key="..\:/punya siapa bae/dafa temen bunga/app/src/main/res/drawable/lock_24px.xml" value="0.20625" />
+        <entry key="..\:/punya siapa bae/dafa temen bunga/app/src/main/res/drawable/lock_48px.xml" value="0.20625" />
+        <entry key="..\:/punya siapa bae/dafa temen bunga/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/punya siapa bae/dafa temen bunga/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
