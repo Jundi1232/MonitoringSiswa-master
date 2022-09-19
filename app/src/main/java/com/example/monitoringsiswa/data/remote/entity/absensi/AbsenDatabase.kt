@@ -22,7 +22,7 @@ abstract class AbsenDatabase:RoomDatabase() {
         fun getInstance(context: Context): AbsenDatabase {  if (INSTANCE == null) {
             synchronized(GuruDatabase::class.java) {
                 INSTANCE = Room.databaseBuilder(context.applicationContext,
-                    AbsenDatabase::class.java, "monitoring.db")
+                    AbsenDatabase::class.java, "absen.db")
                     .build()
             }
         }

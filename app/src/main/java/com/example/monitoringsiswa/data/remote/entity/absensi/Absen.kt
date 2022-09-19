@@ -1,11 +1,14 @@
 package com.example.monitoringsiswa.data.remote.entity.absensi
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 import java.util.Date
 import java.util.UUID
 
+@Parcelize
 @Entity(tableName = "absen")
 data class Absen(
     @ColumnInfo(name = "idabsensi")
@@ -16,7 +19,7 @@ data class Absen(
     val nis : String,
 
     @ColumnInfo(name = "tgl")
-    val tgl: Long,
+    val tgl: String,
 
     @ColumnInfo(name = "ket")
     val ket: String,
@@ -26,4 +29,4 @@ data class Absen(
 
     @ColumnInfo(name = "idkelas")
     val idkelas : String
-    )
+    ):Parcelable

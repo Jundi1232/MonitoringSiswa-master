@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
                     viewModel.getUser(username,password).observe(this@LoginActivity){
                         val intent= Intent(this@LoginActivity,MainActivity::class.java)
                         intent.putExtra(EXTRA_DATA,it)
-                        sessionManager.saveAccessId(it.username)
+//                        sessionManager.saveAccessId(it.username)
                         startActivity(intent)
                         finish()
                     }

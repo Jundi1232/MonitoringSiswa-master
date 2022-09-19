@@ -13,7 +13,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:hint="NIS"
+        android:hint="  NIS"
         android:id="@+id/textInputLayout"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -32,7 +32,7 @@
         app:layout_constraintLeft_toLeftOf="@id/textInputLayout"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:hint="Nama"
+        android:hint="  Nama"
         android:id="@+id/textInputLayout2"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -88,7 +88,7 @@
         app:layout_constraintLeft_toLeftOf="@id/textInputLayout2"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:hint="Tempat"
+        android:hint="  Tempat"
         android:id="@+id/textInputLayout3"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -132,7 +132,7 @@
         app:layout_constraintLeft_toLeftOf="@id/ln"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
-        android:hint="Alamat"
+        android:hint="  Alamat"
         android:id="@+id/textInputLayout4"
         >
         <com.google.android.material.textfield.TextInputEditText

@@ -28,7 +28,7 @@ class SiswaAdapter:RecyclerView.Adapter<SiswaAdapter.SiswaViewHolder>() {
             getWali=data
             binding.apply {
                 tvName.text=data.nama
-                tvMapel.text=data.nis
+                tvMapel.text=data.jk
                 btnHapus.setOnClickListener {
                     onDeleteItemClickCallback?.onItemClicked(data)
                 }

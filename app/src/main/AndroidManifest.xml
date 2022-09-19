@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MonitoringSiswa">
         <activity
-            android:name=".ui.admin.absensi.AbsenMainActivity"
+            android:name=".ui.admin.absensi.DetailAbsensiActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.admin.absensi.AbsenMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.admin.absensi.AddAbsenActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.admin.siswa.ListSiswactivity"
             android:exported="true" />
@@ -42,6 +45,12 @@
             android:exported="true" />
         <activity
             android:name=".ui.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.admin.walmur.WalmurMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,18 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.admin.walmur.WalmurMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.WalasMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.GuruMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

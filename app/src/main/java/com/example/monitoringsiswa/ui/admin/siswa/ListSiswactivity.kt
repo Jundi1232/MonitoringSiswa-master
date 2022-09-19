@@ -39,7 +39,7 @@ class ListSiswactivity : AppCompatActivity() {
             siswaAdapter.setData(it)
             Log.d("coba","$it")
         }
-        recycler= findViewById(R.id.rv_product)
+        recycler= binding.rvProduct
         initAction()
         siswaAdapter.setDeleteItemClickCallback(object : SiswaAdapter.OnItemClickCallback{
             override fun onItemClicked(data: Siswa) {

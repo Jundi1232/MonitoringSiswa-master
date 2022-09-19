@@ -20,11 +20,12 @@ import java.util.*
 class AddSiswaActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener,  AdapterView.OnItemSelectedListener  {
     private var dueDateMillis: Long = System.currentTimeMillis()
     private lateinit var binding: ActivityAddSiswaBinding
-    private var jk:String?=null
+
     private val viewModel: SiswaViewModel by viewModels {
         ViewModelFactorySiswa.getInstance(this)
     }
     private var kelas:String?=null
+    private var jenis:String?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityAddSiswaBinding.inflate(layoutInflater)
@@ -48,18 +49,19 @@ class AddSiswaActivity : AppCompatActivity(), DatePickerFragment.DialogDateListe
         if (view is RadioButton) {
             // Is the button now checked?
             val checked = view.isChecked
-
+            val radio: RadioButton
             // Check which radio button was clicked
             when (view.getId()) {
                 R.id.radio_pirates ->
-                    if (checked) {
-                        // Pirates are the best
-                        jk=R.id.radio_pirates.toString()
+                    {
+                        radio= findViewById(R.id.radio_pirates)
+                        jenis=radio.text.toString()
                     }
                 R.id.radio_ninjas ->
-                    if (checked) {
-                        // Ninjas rule
-                        jk=R.id.radio_ninjas.toString()
+                     {
+                         radio= findViewById(R.id.radio_ninjas)
+                         // Pirates are the best
+                         jenis=radio.text.toString()
                     }
             }
         }
@@ -89,15 +91,30 @@ class AddSiswaActivity : AppCompatActivity(), DatePickerFragment.DialogDateListe
                     val nama=tvNama.text.toString()
                     val alamat=tvAlamat.text.toString()
                     val tempat=tvTempat.text.toString()
-                    val siswa= Siswa(nis,nama,jk.toString(),tempat,dueDateMillis,alamat,kelas.toString())
-                    val login= Login(nis,nis,"Siswa")
-                    viewModel.insertSiswa(siswa)
-                    viewModel.insertLogin(login)
+                    val tgl=addTvDueDate.text.toString()
+                    if(nis.isEmpty() || nama.isEmpty() || alamat.isEmpty() || tempat.isEmpty() || jenis==null || tgl.isEmpty() ){
+                        Toast.makeText(this@AddSiswaActivity,"Field Tidak Boleh Kosong",Toast.LENGTH_SHORT).show()
+                    }
+                    else {
+                        val siswa = Siswa(
+                            nis,
+                            nama,
+                            jenis!!,
+                            tempat,
+                            dueDateMillis,
+                            kelas.toString(),
+                            alamat
+                        )
+                        val login = Login(nis, nis, "Siswa")
+                        viewModel.insertSiswa(siswa)
+                        viewModel.insertLogin(login)
+                        val intent = Intent(this@AddSiswaActivity, ListSiswactivity::class.java)
+                        startActivity(intent)
+                        Toast.makeText(this@AddSiswaActivity,"Berhasil Ditambah", Toast.LENGTH_SHORT).show()
+                        finish()
+                    }
                 }
-                val intent = Intent(this, ListSiswactivity::class.java)
-                startActivity(intent)
-                Toast.makeText(this,"Berhasil Ditambah", Toast.LENGTH_SHORT).show()
-                finish()
+
                 true
             }
             else -> super.onOptionsItemSelected(item)

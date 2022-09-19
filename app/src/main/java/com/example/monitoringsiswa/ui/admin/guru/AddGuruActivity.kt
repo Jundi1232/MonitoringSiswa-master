@@ -23,7 +23,7 @@ import kotlin.collections.ArrayList
 class AddGuruActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener  {
     private var dueDateMillis: Long = System.currentTimeMillis()
     private lateinit var binding: ActivityAddGuruBinding
-    private var jk:String?=null
+    private var jenis:String?=null
     private val viewModel: GuruViewModel by viewModels {
         ViewModelFactoryguru.getInstance(this)
     }
@@ -69,18 +69,21 @@ class AddGuruActivity : AppCompatActivity(), DatePickerFragment.DialogDateListen
         if (view is RadioButton) {
             // Is the button now checked?
             val checked = view.isChecked
+            val radio:RadioButton
 
             // Check which radio button was clicked
             when (view.getId()) {
                 R.id.radio_pirates ->
                     if (checked) {
                         // Pirates are the best
-                        jk=R.id.radio_pirates.toString()
+                        radio= findViewById(R.id.radio_pirates)
+                        jenis=radio.text.toString()
                     }
                 R.id.radio_ninjas ->
                     if (checked) {
                         // Ninjas rule
-                        jk=R.id.radio_ninjas.toString()
+                        radio= findViewById(R.id.radio_ninjas)
+                        jenis=R.id.radio_ninjas.toString()
                     }
             }
         }
@@ -106,24 +109,33 @@ class AddGuruActivity : AppCompatActivity(), DatePickerFragment.DialogDateListen
             R.id.action_save -> {
 
                 binding.apply {
-                    val nip=tvNip.text.toString()
-                    val nama=tvNama.text.toString()
-                    val mapel=tvMapel.text.toString()
-                    val alamat=tvAlamat.text.toString()
-                    val tempat=tvTempat.text.toString()
-                    val notelp=tvNotelp.text.toString()
-                    var level=""
-                    if (mapel=="Walas"){
-                        level="Walas"
+                    val nip = tvNip.text.toString()
+                    val nama = tvNama.text.toString()
+                    val mapel = tvMapel.text.toString()
+                    val alamat = tvAlamat.text.toString()
+                    val tempat = tvTempat.text.toString()
+                    val notelp = tvNotelp.text.toString()
+                    val tgl=addTvDueDate.text.toString()
+                    var level = ""
+                    if (mapel == "Walas") {
+                        level = "Walas"
+                    } else {
+                        level = "Guru"
                     }
-                    else{
-                        level="Guru"
+                    if (nip.isEmpty() || nama.isEmpty() || alamat.isEmpty() || tempat.isEmpty() || jenis == null || tgl.isEmpty()) {
+                        Toast.makeText(
+                            this@AddGuruActivity,
+                            "Field Tidak Boleh Kosong",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    } else {
+                        val login = Login(nip, nip, level)
+                        val guru =
+                            Guru(nip, nama, mapel, jenis!!, tempat, dueDateMillis, alamat, notelp)
+                        viewModel.insertGuru(guru)
+                        viewModel.insertLogin(login)
+                        Log.d("Database", "$login")
                     }
-                    val login=Login(nip,nip,level)
-                    val guru=Guru(nip,nama,mapel,jk.toString(),tempat,dueDateMillis,alamat,notelp)
-                    viewModel.insertGuru(guru)
-                    viewModel.insertLogin(login)
-                    Log.d("Database","$login")
                 }
                 val intent = Intent(this, GuruMainActivity::class.java)
                 startActivity(intent)
